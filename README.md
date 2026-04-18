@@ -131,8 +131,9 @@ This is a personal learning project, but suggestions and improvements are always
 
 If you want to connect or follow the journey:
 
-* LinkedIn (coming soon)
-* YouTube (coming soon)
+<a href="https://www.linkedin.com/in/thayrony-von-held-b14ba7256/?locale=en_US" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
+
+ <a href="https://www.youtube.com/channel/UCo7dUnUiuNw16gVYDuL7RNg" target="_blank"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" target="_blank"></a>
 
 ---
 
