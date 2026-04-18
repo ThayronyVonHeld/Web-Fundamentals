@@ -132,7 +132,6 @@ Este é um projeto de aprendizado pessoal, mas sugestões e melhorias são sempr
 Se você quiser se conectar ou acompanhar a jornada:
 
 <a href="https://www.linkedin.com/in/thayrony-von-held-b14ba7256/?locale=en_US" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
-
  <a href="https://www.youtube.com/channel/UCo7dUnUiuNw16gVYDuL7RNg" target="_blank"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" target="_blank"></a>
 
 ---
