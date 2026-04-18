@@ -3,11 +3,11 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Status-In%20Progress-yellow" />
   <img src="https://img.shields.io/badge/Focus-Full%20Stack-blue" />
-  <a>
-   href="https://github.com/ThayronyVonHeld/Web-Fundamentals/blob/main/README-PT.md">
-  <img src="https://img.shields.io/badge/Languages-EN%20%7C%20PT--BR-green">
+  
+  <a href="https://github.com/ThayronyVonHeld/Web-Fundamentals/blob/main/README-PT.md">
+    <img src="https://img.shields.io/badge/Languages-EN%20%7C%20PT--BR-green">
   </a>
-  <img src="https://img.shields.io/badge/Level-Beginner%20to%20Advanced-purple" />
+  
 </p>
 
 ---
