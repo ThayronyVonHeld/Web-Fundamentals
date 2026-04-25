@@ -18,8 +18,8 @@
 
     <h1>Tags HTML</h1>
     <hr>
-     <p>Olá, você chegou ao meu exercício 07! <br>
-        Nesta aula, vamos conhecer as principais formas de formatação em HTML.</p>
+     <p>Olá, você chegou ao meu exercício 08! <br>
+        Nesta aula, vamos conhecer as listas em HTML!</p>
     <hr>
 
     <h2>Estrutura básica do HTML</h2>
@@ -188,6 +188,73 @@ if (n1 % 2 == 0) {
 </code></pre>
 
     <hr>
+
+<h2>Listas</h2>
+
+<h3>Lista Ordenadas</h3>
+<p>&lt;ol&gt;&lt;/ol&gt; → Cria lista ordenadas</p>
+<p>&lt;li&gt;&lt;/li&gt; → Cria o indice das listas</p>
+<pre><code>
+&lt;ol&gt;
+    &lt;li&gt;Exemplo de lista ordenada&lt;/li&gt;
+    &lt;li&gt;outro exemplo&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre>
+
+<p>A tag &lt;ol&gt; possui parâmetros &lt;ol type="1"&gt;</p>
+
+<p>Lista de parâmetros</p>
+<ul>
+    <li>type"1" → Cria listas numeradas. Ex: 1, 2, 3, 4, ...</li>
+    <li>type"A" → Cria listas alfabeticas em maiusculas. Ex: A, B, C, D, ...</li>
+    <li>type"a" → Cria listas alfabéticas em minúsculas. Ex: a, b, c, d, ...</li>
+    <li>type"I" → Cria listas com algarismos romanos em maiusculas. Ex: I, II, III, IV, ...</li>
+    <li>type"i" → Cria listas com algarismos romanos em minusculas. Ex: i, ii, iii, iv, ...</li>
+</ul>
+
+<hr>
+    
+<h3>Lista não Ordenada</h3>
+<p>&lt;ol&gt;&lt;/ol&gt; → Cria lista não Ordenadas</p>
+<pre><code>
+<ol>
+    <li> Exemplo</li>
+    <li> Exemplo</li>
+</ol>
+</code></pre>
+
+<p>A tag &lt;ul&gt; possui parâmetros &lt;ul type="circle"&gt;</p>
+
+<p>Lista de parâmetros</p>
+<ul>
+    <li>type="disc" → Padrão. Cria uma bola totalmente preta</li>
+    <li>type="circle" → Cria uma bola com borda preta sem preenchimento</li>
+    <li>type="square" → Cria um pequeno quadrado totalmente preto</li>
+</ul>
+
+ <hr>
+
+<p>Misturando as listas: PC: my favorite games!</p>
+<pre><code>
+&lt;ol type="i"&gt;
+    &lt;li&gt; Plafarma: Steam &lt;/li&gt;
+&lt;ul type="circle"&gt;
+    &lt;li&gt; ARK: Survival Envolved&lt;/li&gt;
+    &lt;li&gt; Horizon Zero Dawn&lt;/li&gt;
+    &lt;li&gt; Tomb Raider&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;li&gt; Plataforma: Epic Games &lt;/li&gt;
+
+&lt;ul type="disc"&gt;
+    &lt;li&gt; Watch Dogs&lt;/li&gt;
+    &lt;li&gt; Fortinite&lt;/li&gt;
+    &lt;li&gt; Rocket League&lt;/li&gt;
+    &lt;li&gt; Five guys&lt;/li&gt;
+    &lt;li&gt; 5  ovos&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/ol&gt;    
+</code></pre>
 
 </body>
 
