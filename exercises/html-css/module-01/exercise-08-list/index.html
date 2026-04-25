@@ -194,12 +194,12 @@ if (n1 % 2 == 0) {
 <h3>Lista Ordenadas</h3>
 <p>&lt;ol&gt;&lt;/ol&gt; → Cria lista ordenadas</p>
 <p>&lt;li&gt;&lt;/li&gt; → Cria o indice das listas</p>
-<pre><code>
-&lt;ol&gt;
-    &lt;li&gt;Exemplo de lista ordenada&lt;/li&gt;
-    &lt;li&gt;outro exemplo&lt;/li&gt;
-&lt;/ol&gt;
-</code></pre>
+
+<ol>
+    <li> Acordar</li>
+    <li> Escovar os dentes</li>
+</ol>
+
 
 <p>A tag &lt;ol&gt; possui parâmetros &lt;ol type="1"&gt;</p>
 
@@ -212,16 +212,18 @@ if (n1 % 2 == 0) {
     <li>type"i" → Cria listas com algarismos romanos em minusculas. Ex: i, ii, iii, iv, ...</li>
 </ul>
 
+<p>Para começar de um valor especifico basta adiconar start="" na tag &lt;ol&gt;</p>
+
 <hr>
     
 <h3>Lista não Ordenada</h3>
 <p>&lt;ol&gt;&lt;/ol&gt; → Cria lista não Ordenadas</p>
-<pre><code>
-<ol>
-    <li> Exemplo</li>
-    <li> Exemplo</li>
-</ol>
-</code></pre>
+
+<ul>
+    <li> Camisa amarela</li>
+    <li> Camisa verde</li>
+</ul>
+
 
 <p>A tag &lt;ul&gt; possui parâmetros &lt;ul type="circle"&gt;</p>
 
@@ -234,28 +236,71 @@ if (n1 % 2 == 0) {
 
  <hr>
 
-<p>Misturando as listas: PC: my favorite games!</p>
+<h3>Misturando as listas</h3>
+
+<p>PC: my favorite games!</p>
 <pre><code>
-&lt;ol type="i"&gt;
+&lt;ol type="1"&gt;
     &lt;li&gt; Plafarma: Steam &lt;/li&gt;
-&lt;ul type="circle"&gt;
+&lt;ol type="a"&gt;
     &lt;li&gt; ARK: Survival Envolved&lt;/li&gt;
     &lt;li&gt; Horizon Zero Dawn&lt;/li&gt;
-    &lt;li&gt; Tomb Raider&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;li&gt; Plataforma: Epic Games &lt;/li&gt;
-
-&lt;ul type="disc"&gt;
+&lt;/ol&gt;
+    &lt;li&gt; Plataforma: Epic Games &lt;/li&gt;
+&lt;ol type="a" start="3"&gt;
     &lt;li&gt; Watch Dogs&lt;/li&gt;
     &lt;li&gt; Fortinite&lt;/li&gt;
-    &lt;li&gt; Rocket League&lt;/li&gt;
-    &lt;li&gt; Five guys&lt;/li&gt;
-    &lt;li&gt; 5  ovos&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/ol&gt;    
+&lt;/ol&gt;
+    &lt;li&gt;Plataforma: Riot Games&lt;/li&gt;
+&lt;ul type="circle"&gt;
+        &lt;li&gt;League of Legends&lt;/li&gt;
+        &lt;li&gt;Valorant&lt;/li&gt;
+&lt;/ul&gt; &lt;/ol&gt;    
 </code></pre>
 
-</body>
+<p>Exemplo:</p>
+<ol type="I">
+        <li>Plafarma: Steam</li>
+        <ol type="a"> 
+        <li>ARK: Survival Envolved</li>
+        <li>CS 2</li>
+        </ol>
+    <li>Plataforma: Epic Games</li>
+    <ol type="a" start="3">
+        <li>Watch Dogs</li>
+        <li>Fortinite</li>
+    </ol>
+     <li>Plataforma: Riot Games</li>
+    <ul type="">
+        <li>League of Legends</li>
+        <li>Valorant</li>
+    </ul>
+    </ol>
 
+    <hr>
+
+<h3>Lista de Definições</h3>
+
+<p>&lt;dl&gt;&lt;/dl&gt; → Cria lista de Definições </p>
+<p>&lt;dt&gt;&lt;/dt&gt; → É o termo da lista</p>
+<p>&lt;dd&gt;&lt;/d&gt; → É a definição da lista</p>
+
+<pre><code>
+&lt;dl&gt;
+&lt;dt&gt; Termo &lt;/dt&gt;
+&lt;dd&gt; Definição &lt;/d&gt;
+&lt;/dl&gt;
+</code></pre>
+
+<dl>
+    <dt>HTML</dt>
+    <dd>Linguagem de marcação, para a criação de conteudo de um site</dd>
+    <dl>CSS</dl>
+    <dd>Linguagem de marcação para a criação do desing do site</dd>
+</dl>
+
+<hr>
+
+<h2></h2>
+</body>
 </html>
