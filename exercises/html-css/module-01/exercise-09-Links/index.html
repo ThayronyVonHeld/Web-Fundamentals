@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo HTML</title>
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+
+    <style>
+        mark {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Tags HTML</h1>
+    <hr>
+     <p>Olá, você chegou ao meu exercício 09! <br>
+        Nesta aula, vamos conhecer as diversas formas de inserir links em nosso site!</p>
+    <hr>
+
+    <h2>Estrutura básica do HTML</h2>
+
+    <p> &lt;!DOCTYPE html&gt; → Define o HTML5</p> <!--&lt → LESS THAN/&gt → GREATER THAN-->
+    <p> &lt;html lang="pt-br"&gt; → Define o idioma da página</p>
+    <p> &lt;head&gt; &lt;/head&gt; → Contém configurações e metadados</p>
+    <p> &lt;body&gt; &lt;/body&gt; → Contém o conteúdo visível</p>
+    <p>&lt;style&gt;&lt;/style&gt; → Define estilos CSS da página</p>
+    <hr>
+
+    <h2>Metadados importantes</h2>
+
+    <p>&lt;meta charset="UTF-8"&gt; → Permite o uso de acentos (ç, á, etc.)</p>
+    <p>&lt;meta name="viewport"&gt; → Responsividade (adaptação a diferentes telas)</p>
+    <p>&lt;title&gt; → Define o título da aba do navegador</p>
+
+    <hr>
+
+    <h2>Tags básicas</h2>
+
+    <p>&lt;h1&gt; &lt;/h1&gt; → Títulos</p>
+    <p>&lt;p&gt;&lt;/p&gt; → Parágrafos</p>
+    <p>&lt;hr&gt; → Adiciona uma linha horizontal</p>
+    <p>&lt;br&gt; → Quebra de linha</p>
+
+    <hr>
+
+    <h2>Observações</h2>
+   <p>Para efetuar um comentário no código, utilize:</p>
+    <p>&lt;!-- seu comentário --&gt;</p>
+
+    <!-- Exemplo de comentários -->
+
+        <p>Algumas tags não possuem fechamento, como &lt;hr&gt;, enquanto outras possuem, como &lt;p&gt;&lt;/p&gt;.</p>
+
+   <p>Os títulos em HTML (&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;...) seguem uma hierarquia de importância, e não de tamanho.
+        O &lt;h1&gt; representa o título principal da página, o &lt;h2&gt; representa seções e o &lt;h3&gt; subseções.</p>
+
+    <hr>
+
+    <h2>Principais Formatações</h2>
+
+    <p>&lt;strong&gt;&lt;/strong&gt; → <strong>Texto em negrito (semântico)</strong></p>
+
+    <p>&lt;em&gt;&lt;/em&gt; → <em>Texto em itálico (semântico)</em></p>
+
+    <p>&lt;mark&gt;&lt;/mark&gt; → Texto com marcação: <mark>exemplo de marca-texto</mark> <br></p>
+        
+         <p>Podemos alterar a cor do marca-texto usando CSS:</p>
+
+         <pre><code>
+&lt;style&gt;
+mark {
+    background-color: green;
+}
+&lt;/style&gt;
+    </code></pre>
+
+    <p>Ou diretamente na tag <mark style="background-color: lime;">(inline)</mark>:</p>
+
+    <pre><code>
+&lt;mark style="background-color: lime;"&gt;Seu texto&lt;/mark&gt;
+    </code></pre> 
+    
+    <p>&lt;small&gt;&lt;/small&gt; → <small>Texto pequeno</small></p>
+
+    <p>&lt;del&gt;&lt;/del&gt; → Texto removido <del>exemplo</del></p>
+
+    <p>&lt;ins&gt;&lt;/ins&gt; → Texto inserido <ins>exemplo</ins></p>
+
+    <p>&lt;sup&gt;&lt;/sup&gt; → Texto sobrescrito: x<sup>4</sup></p>
+
+    <p>&lt;sub&gt;&lt;/sub&gt; → Texto subscrito: H<sub>2</sub>O</p>
+
+    <hr>
+
+    <h2>Outras Formatações</h2>
+
+    <p>&lt;code&gt;&lt;/code&gt; → Fonte monoespaçada para código:</p>
+
+        <p><code>document.getElementById('teste')</code></p>
+
+     <p>Para exibir blocos de código formatados, usamos: &lt;pre&gt;&lt;/pre&gt;</p>
+    
+         <pre><code>
+printf("Digite um número:");
+scanf("%d", &n1);
+
+if (n1 % 2 == 0) {
+    printf("O número é par");
+} else {
+    printf("O número é ímpar");
+}
+    </code></pre>
+
+   <p>&lt;q&gt;&lt;/q&gt; → Citações curtas:</p>
+   
+   <p><q>Quando a educação não é libertadora, o sonho do oprimido é se tornar opressor.</q></p>
+
+   <p>&lt;blockquote cite="url"&gt;&lt;/blockquote&gt; → Citações longas:</p>
+
+    <blockquote cite="https://www.google.com.br/books/edition/Educa%C3%A7%C3%A3o_como_pr%C3%A1tica_da_liberdade/WDTTAgAAQBAJ?hl=pt-BR&gbpv=1&dq=Educa%C3%A7%C3%A3o+como+pr%C3%A1tica+da+liberdade,+1999.+paulo+freire&printsec=frontcover"> A educação é um ato de amor, por isso, um ato de coragem </blockquote>
+
+    <p>&lt;abbr&gt;&lt;/abbr&gt; → Abreviações:</p>
+
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e
+        <abbr title="Cascading Style Sheets">CSS</abbr>.
+    </p>
+
+    <hr>
+
+    <h2>Símbolos especiais</h2>
+
+    <p>Por exemplo podemos adicionar o simbolo de marca registrada &+reg = &reg; ou copyright &+copy = &copy;, &trade;,
+        &euro;, &pound;, &yen;, &cent;, &Delta;, &uparrow;</p>
+
+    <p>Para mais símbolos:
+        <a href="https://www.w3schools.com/html/html_symbols.asp">Acessar documentação</a>
+    </p>
+
+    <hr>
+
+    <h2>Adicionando Emoji</h2>
+
+   <p>Para adicionar emojis, acesse:
+        <a href="https://emojipedia.org/">Emojipedia</a>
+    </p>
+    <p>Use o código no formato:</p>
+
+    <pre><code>&amp;#x1F5A5;</code></pre>
+    
+    <p>Exemplo: &#x1F5A5;</p>   
+
+    <p>Outros exemplos: &#x2328; &#x1F5A8; &#x1F4BE; &#x1F4FA;</p>
+
+    <hr>
+
+    <h2>Adicionando imagens e favicon</h2>
+
+    <p>&lt;img src="caminho" alt="descrição"&gt; → para adicionar imagens </p>
+    
+    <p>Imagem na mesma pasta: &lt;img src="logo-html.png" alt="Logo HTML"&gt;</p>
+
+    <img src="/assets/logo-html.png" alt="Logo HTML">
+
+    <hr>
+
+    <p>Imagem em outra pasta, precisamos especificar caminho, &lt;img src= "assets/logo-css.png" alt="Logo CSS"&gt;</p>
+
+    <img src="/assets/logo-css.png" alt="Logo CSS">
+
+    <hr>
+    <p>Adicionando Imagem da web: &lt;img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/JavaScript-shield.svg" alt="Logo JavaScript"&gt;</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Javascript-shield.png" alt="Logo JavaScript">
+
+    <p>Podemos ajustar o tamanho das imagens com CSS (veremos futuramente).</p>
+
+    <hr>
+
+    <p>Para adicionar um favicon (favicon é o icone na aba da guia do navegador)</p>
+    
+    <p>No head de seu index digite:</p>
+<pre><code>
+&lt;link rel="shortcut icon" href="caminho-do-icone" type="image/x-icon"&gt;
+</code></pre>
+
+    <hr>
+
+<h2>Listas</h2>
+
+<h3>Lista Ordenadas</h3>
+<p>&lt;ol&gt;&lt;/ol&gt; → Cria lista ordenadas</p>
+<p>&lt;li&gt;&lt;/li&gt; → Cria o indice das listas</p>
+
+<ol>
+    <li> Acordar</li>
+    <li> Escovar os dentes</li>
+</ol>
+
+
+<p>A tag &lt;ol&gt; possui parâmetros &lt;ol type="1"&gt;</p>
+
+<p>Lista de parâmetros</p>
+<ul>
+    <li>type"1" → Cria listas numeradas. Ex: 1, 2, 3, 4, ...</li>
+    <li>type"A" → Cria listas alfabeticas em maiusculas. Ex: A, B, C, D, ...</li>
+    <li>type"a" → Cria listas alfabéticas em minúsculas. Ex: a, b, c, d, ...</li>
+    <li>type"I" → Cria listas com algarismos romanos em maiusculas. Ex: I, II, III, IV, ...</li>
+    <li>type"i" → Cria listas com algarismos romanos em minusculas. Ex: i, ii, iii, iv, ...</li>
+</ul>
+
+<p>Para começar de um valor especifico basta adiconar start="" na tag &lt;ol&gt;</p>
+
+<hr>
+    
+<h3>Lista não Ordenada</h3>
+<p>&lt;ol&gt;&lt;/ol&gt; → Cria lista não Ordenadas</p>
+
+<ul>
+    <li> Camisa amarela</li>
+    <li> Camisa verde</li>
+</ul>
+
+
+<p>A tag &lt;ul&gt; possui parâmetros &lt;ul type="circle"&gt;</p>
+
+<p>Lista de parâmetros</p>
+<ul>
+    <li>type="disc" → Padrão. Cria uma bola totalmente preta</li>
+    <li>type="circle" → Cria uma bola com borda preta sem preenchimento</li>
+    <li>type="square" → Cria um pequeno quadrado totalmente preto</li>
+</ul>
+
+ <hr>
+
+<h3>Misturando as listas</h3>
+
+<p>PC: my favorite games!</p>
+<pre><code>
+&lt;ol type="1"&gt;
+    &lt;li&gt; Plafarma: Steam &lt;/li&gt;
+&lt;ol type="a"&gt;
+    &lt;li&gt; ARK: Survival Envolved&lt;/li&gt;
+    &lt;li&gt; Horizon Zero Dawn&lt;/li&gt;
+&lt;/ol&gt;
+    &lt;li&gt; Plataforma: Epic Games &lt;/li&gt;
+&lt;ol type="a" start="3"&gt;
+    &lt;li&gt; Watch Dogs&lt;/li&gt;
+    &lt;li&gt; Fortinite&lt;/li&gt;
+&lt;/ol&gt;
+    &lt;li&gt;Plataforma: Riot Games&lt;/li&gt;
+&lt;ul type="circle"&gt;
+        &lt;li&gt;League of Legends&lt;/li&gt;
+        &lt;li&gt;Valorant&lt;/li&gt;
+&lt;/ul&gt; &lt;/ol&gt;    
+</code></pre>
+
+<p>Exemplo:</p>
+<ol type="I">
+        <li>Plafarma: Steam</li>
+        <ol type="a"> 
+        <li>ARK: Survival Envolved</li>
+        <li>CS 2</li>
+        </ol>
+    <li>Plataforma: Epic Games</li>
+    <ol type="a" start="3">
+        <li>Watch Dogs</li>
+        <li>Fortinite</li>
+    </ol>
+     <li>Plataforma: Riot Games</li>
+    <ul type="">
+        <li>League of Legends</li>
+        <li>Valorant</li>
+    </ul>
+    </ol>
+
+    <hr>
+
+<h3>Lista de Definições</h3>
+
+<p>&lt;dl&gt;&lt;/dl&gt; → Cria lista de Definições </p>
+<p>&lt;dt&gt;&lt;/dt&gt; → É o termo da lista</p>
+<p>&lt;dd&gt;&lt;/d&gt; → É a definição da lista</p>
+
+<pre><code>
+&lt;dl&gt;
+&lt;dt&gt; Termo &lt;/dt&gt;
+&lt;dd&gt; Definição &lt;/d&gt;
+&lt;/dl&gt;
+</code></pre>
+
+<dl>
+    <dt>HTML</dt>
+    <dd>Linguagem de marcação, para a criação de conteudo de um site</dd>
+    <dl>CSS</dl>
+    <dd>Linguagem de marcação para a criação do desing do site</dd>
+</dl>
+
+<hr>
+
+<h2>Links</h2>
+
+<h3>Links externos</h3>
+
+<p>&lt;a href=""&gt;&lt;/a&gt; → Tag para o link onde href="sua URL irá aqui" e após o, &gt; você pode colocar um texto clicavél, por exemplo:</p>
+
+<a href="https://github.com/ThayronyVonHeld/Web-Fundamentals">Clique aqui para acessar meu repositorio</a> 
+
+<p>No caso de links externos recomenda-se usar os parâmetros <code>target="_blank" </code> após a url: &lt;a href="" target="_blank" rel="external"&gt;&lt;/a&gt;, para controlar onde o site de destino vai abrir</p>
+
+<p>Existem outros parametros como:</p>
+
+<ul type="circle">
+    <li><code>_blank</code> vai abrir o link em uma nova janela em branco</li>
+    <li><code>_self</code> vai abrir o link na janela ou frame atual (padrão)</li>
+    <li><code>_top</code> vai desfazer todos os frames e abrir o destino no navegador completo</li>
+    <li><code>_parent</code> similar ao uso do _top em uma referencia à janela mae</li>
+    <li><code>nome-do-frame</code> caso esteja usando frames, indicar o nome da janela a abrir</li>
+</ul>
+
+<p>Para indicar qual é a natureza do destino, podemos usar o atributo <code>rel</code>, e existes varios valores:</p>
+
+<ul type="circle">
+    <li><code>next</code> indica que o link e para a proxima parte do documento atual</li>
+    <li><code>prev</code> indica que o link e para a parte anterior do documento atual
+</li>
+    <li><code>vauthor</code> indica que e um link para o site do autor do artigo atual
+</li>
+    <li><code>vexternal</code> indica que e um link para outro site que nao faz parte do site</li>
+    <li><code>nofollow</code> indica que e um link para um site nao endossado, como um link pago</li>
+
+</ul>
+
+<a href="https://www.youtube.com/@thayronyvonheld" target="_blank" rel="external">Clique aqui para acessar meu canal do YouTube</a>
+
+<h2></h2>
+</body>
+</html>
